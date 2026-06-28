@@ -1,0 +1,272 @@
+:root {
+    --bg: #f7f7fb;
+    --text: #171525;
+    --muted: #5f5b74;
+    --primary: #2d6cdf;
+    --primary-dark: #174aa4;
+    --card: #ffffff;
+    --border: #deddec;
+    --good: #12805c;
+    --bad: #c73737;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 7%;
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-weight: 800;
+    color: var(--text);
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--muted);
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+nav a.active,
+nav a:hover {
+    background: #e8efff;
+    color: var(--primary-dark);
+}
+
+.hero {
+    min-height: 72vh;
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 32px;
+    align-items: center;
+    padding: 64px 7%;
+    background: linear-gradient(135deg, #ffffff, #edf4ff);
+}
+
+h1 {
+    font-size: clamp(2rem, 4vw, 4rem);
+    line-height: 1.05;
+    margin: 0 0 16px;
+}
+
+.eyebrow {
+    color: var(--primary);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.hero-text,
+.lead {
+    color: var(--muted);
+    font-size: 1.1rem;
+    max-width: 760px;
+}
+
+.button {
+    display: inline-block;
+    border: 0;
+    border-radius: 8px;
+    padding: 12px 18px;
+    background: var(--primary);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.chain-visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.block-card {
+    min-width: 120px;
+    padding: 24px;
+    text-align: center;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(36, 43, 96, 0.08);
+    font-weight: 800;
+}
+
+.block-card span {
+    color: var(--muted);
+    font-weight: 400;
+}
+
+.link-line {
+    width: 42px;
+    height: 4px;
+    background: var(--primary);
+    border-radius: 999px;
+}
+
+.section {
+    padding: 54px 7%;
+}
+
+.grid {
+    display: grid;
+    gap: 18px;
+}
+
+.two {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.three {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.info-card,
+.compare-card,
+.price-card,
+.miner-card,
+.highlight {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px;
+}
+
+.concept-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 24px;
+}
+
+.compare-card p {
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+}
+
+.page-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 18px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 900;
+    margin: 8px 0;
+}
+
+.up {
+    color: var(--good);
+    font-weight: 800;
+}
+
+.down {
+    color: var(--bad);
+    font-weight: 800;
+}
+
+label {
+    display: block;
+    margin: 12px 0;
+    font-weight: 800;
+}
+
+input,
+textarea {
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font: inherit;
+}
+
+textarea {
+    min-height: 90px;
+    resize: vertical;
+}
+
+.hash {
+    overflow-wrap: anywhere;
+    padding: 12px;
+    background: #f0f2f8;
+    border-radius: 8px;
+    font-family: Consolas, monospace;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-weight: 900;
+}
+
+.valid {
+    background: #dcf8ec;
+    color: var(--good);
+}
+
+.invalid {
+    background: #ffe8e8;
+    color: var(--bad);
+}
+
+footer {
+    padding: 22px 7%;
+    text-align: center;
+    color: var(--muted);
+    border-top: 1px solid var(--border);
+    background: #ffffff;
+}
+
+@media (max-width: 800px) {
+    .site-header,
+    .page-top {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero,
+    .two,
+    .three,
+    .concept-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 38px;
+    }
+}
+

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Simulator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Arbitrum Builder Pods</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="concepts.html">Concepts</a>
+            <a href="prices.html">Live Prices</a>
+            <a class="active" href="simulator.html">Block Simulator</a>
+        </nav>
+    </header>
+
+    <main class="section">
+        <h1>Block Mining Simulator</h1>
+        <p class="lead">
+            Mine blocks and see how changing Block 1 breaks Block 2.
+        </p>
+
+        <div class="grid two">
+            <section class="miner-card">
+                <h2>Block 1</h2>
+
+                <label>
+                    Block Data
+                    <textarea id="data1">Alice sends 1 ETH to Bob</textarea>
+                </label>
+
+                <label>
+                    Previous Hash
+                    <input id="prev1" value="0000-genesis">
+                </label>
+
+                <label>
+                    Nonce
+                    <input id="nonce1" type="number" value="0">
+                </label>
+
+                <button class="button" id="mine1">Mine Block 1</button>
+                <p id="valid1" class="status-badge invalid">Block Invalid</p>
+                <p class="hash" id="hash1"></p>
+            </section>
+
+            <section class="miner-card">
+                <h2>Block 2</h2>
+
+                <label>
+                    Block Data
+                    <textarea id="data2">Bob sends 0.5 ETH to Carol</textarea>
+                </label>
+
+                <label>
+                    Previous Hash
+                    <input id="prev2" readonly>
+                </label>
+
+                <label>
+                    Nonce
+                    <input id="nonce2" type="number" value="0">
+                </label>
+
+                <button class="button" id="mine2">Mine Block 2</button>
+                <p id="valid2" class="status-badge invalid">Block Invalid</p>
+                <p class="hash" id="hash2"></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by: Harsh Dhankecha | GitHub: https://github.com/harsh-501 | Batch: 5 G-2</p>
+    </footer>
+
+    <script src="simulator.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Prices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="logo" href="index.html">Arbitrum Builder Pods</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="concepts.html">Concepts</a>
+            <a class="active" href="prices.html">Live Prices</a>
+            <a href="simulator.html">Block Simulator</a>
+        </nav>
+    </header>
+
+    <main class="section">
+        <div class="page-top">
+            <div>
+                <h1>Live Crypto Prices</h1>
+                <p class="lead">ETH and BTC prices fetched from CoinGecko.</p>
+            </div>
+            <button class="button" id="refreshBtn">Refresh</button>
+        </div>
+
+        <p id="status">Loading prices...</p>
+        <div id="priceGrid" class="grid two"></div>
+    </main>
+
+    <footer>
+        <p>Created by: Harsh Dhankecha | GitHub: https://github.com/harsh-501 | Batch: 5 G-2</p>
+    </footer>
+
+    <script src="prices.js"></script>
+</body>
+</html>
+
