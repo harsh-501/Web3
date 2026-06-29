@@ -14,6 +14,8 @@ It includes:
 - Arbitrum overview
 - Benefits of Layer 2
 - Website navigation
+- <img width="1920" height="1080" alt="Screenshot (7)" src="https://github.com/user-attachments/assets/96105497-b1cb-4f49-b153-cf2bc9b7e63a" />
+
 
 ### 2. Concepts Page
 Shows visual comparison cards for important Web3 concepts.
@@ -23,6 +25,7 @@ Concepts covered:
 - Ethereum vs Bitcoin
 - Public Key vs Private Key
 - Blockchain vs Traditional Database
+<img width="1920" height="1008" alt="Screenshot 2026-06-29 145943" src="https://github.com/user-attachments/assets/075703df-6da3-4cea-9ad6-7f6864015e19" />
 
 ### 3. Live Prices Page
 Fetches live cryptocurrency prices using the CoinGecko API.
@@ -33,6 +36,7 @@ It displays:
 - 24-hour price change
 - Green or red indicator based on price movement
 - Refresh button
+<img width="1920" height="1008" alt="Screenshot 2026-06-29 150000" src="https://github.com/user-attachments/assets/94fd62e0-f7fc-4527-a5f6-3d3aca77730d" />
 
 ### 4. Block Simulator Page
 An interactive simulator that demonstrates how blockchain mining works.
@@ -45,6 +49,7 @@ It includes:
 - Mining button
 - Block valid / invalid status
 - Chain breaking effect when Block 1 data changes
+<img width="1920" height="1008" alt="Screenshot 2026-06-29 150014" src="https://github.com/user-attachments/assets/895ef356-54aa-4230-bac0-93f18449d4a3" />
 
 ## Technologies Used
 
