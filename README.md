@@ -63,6 +63,10 @@ It includes:
 
 No installation is required.
 
+## Created by: Harsh Dhankecha
+GitHub: https://github.com/harsh-501
+Batch: 5 G-2
+
 ## Project Structure
 
 ```txt
@@ -74,8 +78,6 @@ arbitrum-builder-assignment/
 ├── style.css
 ├── prices.js
 ├── simulator.js
-└── README.md
+└── README.md ```
 
-## Created by: Harsh Dhankecha
-GitHub: https://github.com/harsh-501
-Batch: 5 G-2
+
